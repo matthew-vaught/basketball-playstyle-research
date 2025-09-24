@@ -60,6 +60,8 @@ Explore interactive visualizations that highlight the results of this research:
 ---
 
 ## Repository Structure
+
+```
 basketball-pf-research/
 │
 ├── Basketball-reference data/ # raw and processed stats from Basketball-Reference
@@ -71,7 +73,7 @@ basketball-pf-research/
 ├── Reproducing Results Notebooks/ # main analysis pipeline notebooks
 ├── tSNE and LE Notebooks/ # dimensionality reduction / embedding analyses
 └── README.md
-
+```
 
 ---
 
