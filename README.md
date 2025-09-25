@@ -1,8 +1,8 @@
-# Evolution of Power Forward Role in the NBA 🏀
+# Evolution of Playstyle and Height in the NBA 🏀
 
 [![Poster Preview](https://raw.githubusercontent.com/matthew-vaught/bball_research_portfolio/main/UGS%20Poster%20Presentation%20Template.pptx%20(4).png)](https://raw.githubusercontent.com/matthew-vaught/bball_research_portfolio/main/UGS%20Poster%20Presentation%20Template.pptx%20(4).png)
 
-This repository contains all notebooks and supporting files for my research on the evolution of height and playstyle for **power forwards** in the NBA from 2013–2014 through 2023–2024.
+This repository contains all notebooks and supporting files for my research on the evolution of height and playstyle in the NBA from 2000 through 2024.
 
 ---
 
@@ -10,26 +10,25 @@ This repository contains all notebooks and supporting files for my research on t
 
 The modern NBA has seen lineup shifts (small ball, positionless basketball) and evolving player archetypes. In particular:
 
-- How has the **average height** of power forwards changed over the past decade?  
+- How has the **average height** of players changed over the past few decades?  
 - How have playstyles (shot selection, spacing, roles) evolved?  
-- Can we classify PFs into distinct archetypes over time and detect transitions?
+- Can we classify lineups into archetypes and detect transitions over time?
 
-This project aims to quantify those shifts, cluster PF playstyles, and test whether lineup decisions (e.g. via “small-ball” configurations) statistically correlate with performance gains.
+This project aims to quantify those shifts, analyze playstyle archetypes, and test whether lineup decisions (e.g. via “small-ball” configurations) statistically correlate with performance gains.
 
 ---
 
 ## Data & Sources
 
 - **NBA Player & Season Data** scraped from Basketball-Reference and various online sources (Selenium + BeautifulSoup).  
-- Data spans 2013–14 through 2023–24, focused on position “PF” players (with allowances for hybrid roles).  
-- Key features include per-season stats (points, rebounds, assists, shooting splits, usage), derived metrics (e.g. shot location shares, spacing), etc.  
-- Some reference data and external league metrics (for normalization) also imported.
+- Data spans the 2000–01 through 2023–24 seasons, focusing on both playstyle and height statistics.  
+- Key features include per-season stats (points, rebounds, assists, shooting splits, usage), derived metrics (e.g. shot location shares, spacing), as well as height and athleticism statistics from then NBA combine.
 
 ---
 
 ## Methods & Tools
 
-- **Tools & Libraries**: Python ecosystem — Pandas, NumPy, scikit-learn, SciPy, Seaborn/Matplotlib.  
+- **Tools & Libraries**: Python — Pandas, NumPy, scikit-learn, SciPy, Seaborn/Matplotlib.  
 - **Dimensionality Reduction / Clustering**:  
   - PCA (Principal Components Analysis)  
   - Ward’s hierarchical clustering  
@@ -41,11 +40,10 @@ This project aims to quantify those shifts, cluster PF playstyles, and test whet
 
 ## Key Findings & Insights
 
-- The **average height** of PFs has trended downward (or plateaued) relative to historical expectations.  
-- Distinct **archetypes** emerged (e.g. “stretch PF,” “rim-oriented PF,” “hybrid big”) based on shot location, usage, and role metrics.  
-- Over time, many PFs shifted toward spacing and 3-point shooting.  
-- Evidence suggests lineup adjustments (e.g. inserting a smaller, more versatile PF) corresponded with **~10% improvement** in win rate on average.  
-- Visualizations (scatter plots, clustering maps, temporal embeddings) illustrate these transitions and groupings.
+- The NBA has shifted to a "small-ball" era, with shorter teams on average and a quicker style of play with more 3 pointers being taken
+- Specifically, teams have gone towards shorter overall lineups with traditional "big men" being replaced by slightly shorter, more athletic power forwards and centers
+- During the early periods of this transition, teams who embodied the new playstyle and height trends the most (the most "trendy" teams) boasted a win percentage over **10% higher** than those teams who failed to adjust to the trend as quickly
+- Visualizations (scatter plots, clustering maps, temporal embeddings) illustrate these transitions more eloquently.
 
 ---
 
@@ -80,12 +78,10 @@ basketball-pf-research/
 ## How to Explore / Use This Repo
 
 1. Start with **Importing Data Notebooks/** to see how raw data is collected and cleaned.  
-2. Move to **Reproducing Results Notebooks/** for the main analysis pipeline: PCA, clustering, and statistical testing.  
-3. Explore **tSNE and LE Notebooks/** for embedding plots and visual transitions.  
+2. Move to **Reproducing Results Notebooks/** for the preliminary analysis: reproducing the results from a paper I found that used PCA and clustering to create archetypes for player playstyles.  
+3. Explore **tSNE and LE Notebooks/** for the main analysis, where I primarily used Laplacian Eigenmaps and PCA to visualize high-dimensional height and playstyle metrics and determine long-term trends.  
 4. Use files in **Important DataFrames/** to inspect intermediate artifacts.  
-5. For additional or exploratory directions, see **Further Research/**.  
-
-*(The code is intended for exploration in a standard Python data science environment; detailed environment setup is not included.)*
+5. For additional research on how athleticicism covaried with the shift in height, see **Further Research/**.  
 
 ---
 
@@ -94,10 +90,9 @@ basketball-pf-research/
 - Classification of PFs may miss hybrid or reclassified players.  
 - Some seasons/players have missing data or outlier stats.  
 - Future improvements could include:  
-  - Extending scraping to more seasons  
+  - Extending scraping to more seasons 
   - Integrating tracking data (player movement, shot charts)  
-  - Testing predictive models (e.g. archetype → team success)  
-  - Developing richer dashboards for interactive exploration  
+  - Testing predictive models (e.g. archetype → team success)
 
 ---
 
