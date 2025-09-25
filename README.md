@@ -6,6 +6,16 @@ This repository contains all notebooks and supporting files for my research on t
 
 ---
 
+## Interactive Dashboards
+
+Explore interactive visualizations that highlight the results of this research:
+
+- [Team Trends Over Years](https://matthew-vaught.github.io/team_trend_over_years_visualization/) — interactive view of team trends over time.  
+- [Laplacian Eigenmaps with Histograms](https://matthew-vaught.github.io/le_with_histograms/) — embedding visualization with detailed histograms.  
+- [LE Slider with Win Percentage](https://matthew-vaught.github.io/new_le_slider_winp/) — slider tool to explore embeddings alongside win percentage.  
+
+---
+
 ## Background & Motivation
 
 The modern NBA has seen lineup shifts (small ball, positionless basketball) and evolving player archetypes. In particular:
@@ -47,16 +57,6 @@ This project aims to quantify those shifts, analyze playstyle archetypes, and te
 
 ---
 
-## Interactive Dashboards
-
-Explore interactive visualizations that highlight the results of this research:
-
-- [Team Trends Over Years](https://matthew-vaught.github.io/team_trend_over_years_visualization/) — interactive view of team trends over time.  
-- [Laplacian Eigenmaps with Histograms](https://matthew-vaught.github.io/le_with_histograms/) — embedding visualization with detailed histograms.  
-- [LE Slider with Win Percentage](https://matthew-vaught.github.io/new_le_slider_winp/) — slider tool to explore embeddings alongside win percentage.  
-
----
-
 ## Repository Structure
 
 ```
@@ -85,16 +85,6 @@ basketball-pf-research/
 
 ---
 
-## Limitations & Future Work
-
-- Classification of PFs may miss hybrid or reclassified players.  
-- Some seasons/players have missing data or outlier stats.  
-- Future improvements could include:  
-  - Extending scraping to more seasons 
-  - Integrating tracking data (player movement, shot charts)  
-  - Testing predictive models (e.g. archetype → team success)
-
----
 
 ## Acknowledgments
 
